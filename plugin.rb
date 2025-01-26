@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# name: hide_topics
+# name: hide_topics_plugin
 # about: Automatically hide topics based on categories with flexible visibility settings
 # version: 0.2
 # authors: MicroVolk
@@ -10,7 +10,7 @@
 enabled_site_setting :hide_topics_enabled
 
 module ::MyPluginModule
-  PLUGIN_NAME = "hide_topics"
+  PLUGIN_NAME = "hide_topics_plugin"
 
   class Engine < ::Rails::Engine
     engine_name PLUGIN_NAME

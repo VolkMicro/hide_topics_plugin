@@ -6,3 +6,6 @@ en:
           hide_topics: "Hide Topics Plugin"
         hide_topics_enabled: "Enable Hide Topics Plugin"
         hide_topics_categories: "Categories to hide topics"
+        hide_topics_name: "Plugin Name"
+  hide_topics:
+    title: "Hide Topics Plugin"

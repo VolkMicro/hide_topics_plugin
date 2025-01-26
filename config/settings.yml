@@ -6,3 +6,7 @@ hide_topics:
     default: ""
     type: list
     client: true
+  hide_topics_name:
+    default: "Hide Topics Plugin"
+    client: true
+    type: text
