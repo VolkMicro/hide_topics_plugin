@@ -2,7 +2,7 @@
 
 # name: hide_topics
 # about: Automatically hide topics based on categories with flexible visibility settings
-# version: 0.1
+# version: 0.2
 # authors: MicroVolk
 # url: https://github.com/VolkMicro/hide_topics_plugin
 # required_version: 2.7.0
@@ -19,6 +19,12 @@ module ::MyPluginModule
 end
 
 require_relative "lib/my_plugin_module/engine"
+
+add_admin_route 'hide_topics.title', 'hide-topics'
+
+Discourse::Application.routes.append do
+  get '/admin/plugins/hide-topics' => 'admin/plugins#index', constraints: StaffConstraint.new
+end
 
 after_initialize do
   # Hide topics when created in specified categories

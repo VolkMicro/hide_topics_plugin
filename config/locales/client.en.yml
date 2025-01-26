@@ -3,8 +3,6 @@ en:
     admin:
       site_settings:
         categories:
-          TODO_plugin_name: "hide topics"
-        hide_topics_enabled: "Enable hiding topics plugin"
-  js:
-    discourse_plugin_name:
-      placeholder: placeholder
+          hide_topics: "Hide Topics Plugin"
+        hide_topics_enabled: "Enable Hide Topics Plugin"
+        hide_topics_categories: "Categories to hide topics"
